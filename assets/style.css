@@ -1,0 +1,5 @@
+button:hover {
+    background-color: #7AA874 !important;
+    transform: scale(1.03);
+    transition: all 0.2s ease-in-out;
+}
