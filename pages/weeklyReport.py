@@ -36,7 +36,6 @@ layout = html.Div([
         dcc.Graph(id="weekly-pie-chart", figure=generate_pie_chart(report)),
     ]),
 
-    # Butonlar vs istersen buraya ekleyebilirsin
 ])
 
 @callback(
