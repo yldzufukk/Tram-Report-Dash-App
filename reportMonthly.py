@@ -2,7 +2,7 @@ import mysql.connector
 import pandas as pd
 from datetime import datetime, timedelta
 
-class ReportWeekly():
+class ReportMonthly():
 
     def __init__(self, database):
         self.database = database
@@ -21,7 +21,7 @@ class ReportWeekly():
 
         cursor = conn.cursor()
 
-        cursor.execute("SELECT * FROM db_dailylog ORDER BY repDay DESC LIMIT 7 OFFSET 0")
+        cursor.execute("SELECT * FROM db_dailylog order by repDay desc limit 30 offset 1")
         dailyLogData = cursor.fetchall()  
         df_dailyLogData = pd.DataFrame(dailyLogData)
         df_dailyLogData.columns = ["repDay", "tramKm", "depoSure", "hatSure", "hareketSure", "sifirHizSure" ,"gnlKM","gnlkWH_a0",
