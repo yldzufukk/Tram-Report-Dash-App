@@ -7,34 +7,24 @@ class ReportMonthly():
     def __init__(self, database):
         self.database = database
         self.df_dailyLogData = self.sql_connection() 
-        #, self.df_dblogsData 
 
     def sql_connection(self):
 
         conn = mysql.connector.connect(
-            host="192.168.58.10",
-            port=10003,        
-            user="ulasimpark",    
-            password="sgrail",       
+            host="your_database_host",
+            port=your_database_post,        
+            user="your_database_user",    
+            password="your_database_password",       
             database=self.database
         )
-
         cursor = conn.cursor()
 
         cursor.execute("SELECT * FROM db_dailylog order by repDay desc limit 30 offset 1")
         dailyLogData = cursor.fetchall()  
         df_dailyLogData = pd.DataFrame(dailyLogData)
-        df_dailyLogData.columns = ["repDay", "tramKm", "depoSure", "hatSure", "hareketSure", "sifirHizSure" ,"gnlKM","gnlkWH_a0",
-                        "gnlkWH_a1", "gnlkWH_a2", "gnlkWH_a3", "gnlkWH_b0", "gnlkWH_b1", "gnlkWH_b2", "gnlkWH_b3", "xMSend"]
+        df_dailyLogData.columns = ["your_database_columns"]
         
-        """
-        cursor.execute("SELECT * FROM dblogs WHERE FLOOR(vDateTime) = FLOOR((SELECT MAX(vDateTime) FROM dblogs)) - 1 ORDER BY vDateTime DESC")
-        dblogsData = cursor.fetchall()  
-        df_dblogsData = pd.DataFrame(dblogsData)
-        df_dblogsData.columns = ["id_num", "vDateTime", "iLogCode", "iLogLevel", "blogState", "sLogDesc","dLogPosition","dTramSpeed",
-                    "dCoordinateX", "dCoordinateY", "dCatVoltage", "dTCU1Voltage", "dTCU2Voltage", "bActCab", "xMSend", "bDepot"]
-        """
-        
+
         cursor.close()
         conn.close()
 
@@ -58,17 +48,6 @@ class ReportMonthly():
         tarih_str = f"{yesterday.day} {ay} {gun} {yesterday.year}"
         return tarih_str
 
-    """
-    def execute_logs(self):
-
-        df_rowsLogs = self.df_dblogsData[["iLogCode", "sLogDesc"]] 
-        df_grouped = df_rowsLogs.groupby('iLogCode').agg(
-            count=('iLogCode', 'size'),
-            descriptions=('sLogDesc', ' '.join) 
-        ).reset_index()
-
-        return df_grouped
-    """
     
     def getTramKm(self):
         df_rows = self.df_dailyLogData
