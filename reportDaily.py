@@ -12,10 +12,10 @@ class Report():
     def sql_connection(self):
 
         conn = mysql.connector.connect(
-            host="192.168.58.10",
-            port=10003,        
-            user="ulasimpark",    
-            password="sgrail",       
+            host="your_db_host",
+            port=your_db_post,        
+            user="your_db_user",    
+            password="your_db_password",       
             database=self.database
         )
 
