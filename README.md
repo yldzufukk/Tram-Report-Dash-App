@@ -59,7 +59,10 @@ pip install mysql-connector-python
 
 ### DEMO
 
-https://github.com/user-attachments/assets/10b1c224-ad55-4521-a27e-e04cb49b5760
+
+https://github.com/user-attachments/assets/2d5e89d4-c995-4738-94dd-52fa536c20c7
+
+
 
 
 
