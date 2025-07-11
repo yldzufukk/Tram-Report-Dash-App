@@ -18,6 +18,8 @@ conn = mysql.connector.connect(
     password="your_database_password",       
     database=self.database
 )
+```
+
 
 2. Run the Script
 Once you've saved your database details, run the script via terminal:
