@@ -48,11 +48,11 @@ pip install mysql-connector-python
 
 
 ## 📸 Screenshots
-###🖼️ Main Dashboard
+### 🖼️ Main Dashboard
 <img width="1920" height="1080" alt="Main Dashboard" src="https://github.com/user-attachments/assets/7798f9d4-8c6c-48bb-90ad-e0369a2b0140" />
-###📊 Weekly Report Sample
+### 📊 Weekly Report Sample
 <img width="1920" height="1080" alt="Weekly Report" src="https://github.com/user-attachments/assets/88d1bb70-3b5e-41f3-9ac2-c3175e038e51" />
-###⚡ Monthly Power Report
+### ⚡ Monthly Power Report
 <img width="1920" height="1080" alt="Monthly Power Report" src="https://github.com/user-attachments/assets/68e3b404-3a40-4553-b94b-47388c43c26f" />
 
 📬 Contact
