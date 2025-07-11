@@ -52,7 +52,7 @@ pip install mysql-connector-python
 <img width="1920" height="1080" alt="Main Dashboard" src="https://github.com/user-attachments/assets/7798f9d4-8c6c-48bb-90ad-e0369a2b0140" />
 
 ### 📊 Weekly Report Sample
-<img width="1908" height="903" alt="1" src="https://github.com/user-attachments/assets/67d1b208-36f7-460c-96f6-03ed7fbe5b03" />
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/15cae4b4-85a3-4a78-aec8-c9c79c9d9f20" />
 
 
 ### ⚡ Monthly Power Report
