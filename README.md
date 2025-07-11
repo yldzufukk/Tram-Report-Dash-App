@@ -57,6 +57,7 @@ pip install mysql-connector-python
 ### ⚡ Monthly Power Report
 <img width="1920" height="1080" alt="Monthly Power Report" src="https://github.com/user-attachments/assets/68e3b404-3a40-4553-b94b-47388c43c26f" />
 
+
 📬 Contact
 For any questions or improvements, feel free to open an issue or submit a pull request.
 
