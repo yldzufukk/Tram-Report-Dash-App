@@ -8,7 +8,7 @@ This project is designed to generate **daily**, **weekly**, and **monthly** repo
 
 ### 1. Database Configuration
 
-Open the `main.py` file and locate the database connection block. Replace the placeholders with your actual database credentials:
+Open the `reportDaily.py`, `reportWeekly.py`, `reportMonthly.py` file and locate the database connection block. Replace the placeholders with your actual database credentials:
 
 ```python
 conn = mysql.connector.connect(
@@ -20,17 +20,14 @@ conn = mysql.connector.connect(
 )
 ```
 
-
-2. Run the Script
+### 2. Run the Script
 Once you've saved your database details, run the script via terminal:
-
-bash
-Kopyala
-Düzenle
+```python
 python main.py
+```
 The script will automatically generate the reports and output the results.
 
-📁 Output
+### 📁 Output
 Daily Kilometer & Power Report
 
 Weekly Kilometer & Power Report
@@ -39,26 +36,24 @@ Monthly Kilometer & Power Report
 
 All reports are structured and can be exported to CSV, Excel, or any desired format with minor modifications.
 
-🧱 Requirements
+### 🧱 Requirements
 Python 3.x
 
 mysql-connector-python
 
 You can install the required library using:
-
-bash
-Kopyala
-Düzenle
+```python
 pip install mysql-connector-python
-📸 Screenshots
-🖼️ Main Dashboard
+```
+
+
+## 📸 Screenshots
+###🖼️ Main Dashboard
 <img width="1920" height="1080" alt="Main Dashboard" src="https://github.com/user-attachments/assets/7798f9d4-8c6c-48bb-90ad-e0369a2b0140" />
-📊 Weekly Report Sample
+###📊 Weekly Report Sample
 <img width="1920" height="1080" alt="Weekly Report" src="https://github.com/user-attachments/assets/88d1bb70-3b5e-41f3-9ac2-c3175e038e51" />
-⚡ Monthly Power Report
+###⚡ Monthly Power Report
 <img width="1920" height="1080" alt="Monthly Power Report" src="https://github.com/user-attachments/assets/68e3b404-3a40-4553-b94b-47388c43c26f" />
-📎 Additional Resource
-You can also check out this resource image.
 
 📬 Contact
 For any questions or improvements, feel free to open an issue or submit a pull request.
